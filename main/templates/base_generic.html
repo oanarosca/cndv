@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}<title>Pagina principală - CNDV</title>{% endblock %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block styles %}{% endblock %}
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg" id="contact">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <span>
+              <p><i class="fa fa-location-arrow"></i> Str. Mihai Viteazu, nr. 14, Sighetu Marmației, jud. Maramureș, cod poștal 435500</p>
+            </span>
+            <span>
+              <p><i class="fa fa-phone"></i> 0262 311.958 (telefon), 0262 318.509 (fax)</p>
+            </span>
+            <span>
+              <p><i class="fa fa-envelope"></i> cndv.sighet@gmail.com</p>
+            </span>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'img/logo.png' %}" height="100" class="d-inline-block align-top" alt="">
+                COLEGIUL NAŢIONAL „DRAGOŞ VODĂ” SIGHETU MARMAŢIEI
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">ACASĂ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DESPRE NOI
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                          <a class="dropdown-item" href="#">Istorie</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Clase</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Profesori</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Personal auxiliar</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Program de lucru</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ORGANIZARE
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                          <a class="dropdown-item" href="#">Noutăţi</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Calendar</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Regulament</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Orare</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EDUCAŢIE
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                          <a class="dropdown-item" href="#">Rezultate</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Examene</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Proiecte</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Activităţi</a>
+                      </div>
+                  </li>
+            </ul>
+            </div>
+        </nav>
+        <div id="footer">
+            <div class="row">
+                <div class="col">
+                    <h2>Legături utile</h2>
+                    <p><i class="fa fa-angle-double-right"></i><a href="#">Orar</a></p>
+                    <p><i class="fa fa-angle-double-right"></i><a href="#">Regulament</a></p>
+                    <p><i class="fa fa-angle-double-right"></i><a href="#">Organizare</a></p>
+                    <p><i class="fa fa-angle-double-right"></i><a href="#">Profesori</a></p>
+                </div>
+                <div class="col">
+                    <h2>Contact</h2>
+                    <p><i class="fa fa-location-arrow"></i> Sighetu Marmației, str. Mihai Viteazu nr. 14</p>
+                    <p><i class="fa fa-phone"></i> 0262 311.958, 0262 318.509 (fax)</p>
+                    <p><i class="fa fa-envelope"></i> cndv.sighet@gmail.com</p>
+                </div>
+                <div class="col">
+                    <h2>Ne găsiţi şi pe Facebook</h2>
+                    <div class="fb-page" data-href="https://www.facebook.com/CNDVSIGHET/" data-tabs="timeline"
+                         data-small-header="false" data-adapt-container-width="true" data-height="131"
+                         data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/CNDVSIGHET/" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/CNDVSIGHET/">Colegiul National Dragos Voda Sighetu-Marmatiei</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>Made with <i class="fa fa-heart"></i> by Oana</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
